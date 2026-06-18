@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     long long binary;
     int decimal = 0;
     int base = 1;
@@ -9,7 +10,8 @@ int main() {
     printf("Enter a binary number: ");
     scanf("%lld", &binary);
 
-    while (binary > 0) {
+    while (binary > 0) 
+    {
         remainder = binary % 10;
         decimal = decimal + remainder * base;
         binary = binary / 10;

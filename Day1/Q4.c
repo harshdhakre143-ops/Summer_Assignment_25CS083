@@ -1,15 +1,18 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     long long num;
     int count = 0;
 
     printf("Enter an integer: ");
-    if (scanf("%lld", &num) != 1) {
+    if (scanf("%lld", &num) != 1) 
+    {
         return 1;
     }
 
-    do {
+    do 
+    {
         count++;
         num /= 10;
     } while (num != 0);

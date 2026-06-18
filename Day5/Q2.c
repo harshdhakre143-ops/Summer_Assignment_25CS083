@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int num, originalNum, rem, sum = 0;
     
     printf("Enter a number: ");
@@ -8,11 +9,13 @@ int main() {
     
     originalNum = num;
     
-    while (num > 0) {
+    while (num > 0) 
+    {
         rem = num % 10;
         
         int fact = 1;
-        for (int i = 1; i <= rem; i++) {
+        for (int i = 1; i <= rem; i++) 
+        {
             fact *= i;
         }
         
@@ -20,9 +23,12 @@ int main() {
         num /= 10;
     }
     
-    if (sum == originalNum) {
+    if (sum == originalNum) 
+    {
         printf("%d is a strong number.\n", originalNum);
-    } else {
+    } 
+    else 
+    {
         printf("%d is not a strong number.\n", originalNum);
     }
     

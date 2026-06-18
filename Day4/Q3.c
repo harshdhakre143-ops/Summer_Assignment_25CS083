@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main() 
+{
     int n, temp, digits = 0;
     int sum = 0;
 
@@ -10,14 +11,16 @@ int main() {
 
     temp = n;
 
-    while(temp != 0) {
+    while(temp != 0) 
+    {
         digits++;
         temp /= 10;
     }
 
     temp = n;
 
-    while(temp != 0) {
+    while(temp != 0) 
+    {
         int digit = temp % 10;
         sum += pow(digit, digits);
         temp /= 10;
